@@ -1,0 +1,101 @@
+@import url('https://fonts.cdnfonts.com/css/harry-potter'); 
+/*Fonte dos Títulos*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap'); 
+/*Fonte dos paragrafos*/
+
+/*Reset basico*/
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+/*Alterando o alinhamento do texto e mudando a cor do fundo*/
+body{
+    text-align: center;
+    background-color: rgba(48, 41, 47, 1); /*Cor do fundo*/
+}
+
+/*Mudando a cor das letras e o tamanho do preenchimento e a fonte ára a fonte do Harry Potter*/
+header{
+    color: rgb(40,114,51);
+    padding: 20px;
+    font-family: 'Harry Potter';
+}
+
+/*Mudando a parte de navegação, tirando o sublinhado horroroso, mudando a cor da letra, cor do fundo, criando uma caixa ao redor dela*/
+nav a{
+    text-decoration: none; /*Tira decorações (Tira aquele sublinhado horroroso)*/
+    color: rgba(44, 218, 157, 1);
+    background-color: rgb(0, 49, 73);
+    display: inline-block; /*Deixa os itens lado a lado*/
+    margin: 12px;
+    padding: 10px 20px;
+    border: solid black 1px;
+    border-radius: 10px;
+}
+
+/*Quando passar o mouse em cima do nav ele muda*/
+nav a:hover{
+    background-color: rgb(0, 0, 75);
+    color: rgb(255, 87, 87);
+}
+
+nav{
+    background-color: rgb(77, 77, 77);
+    padding: 1px;
+}
+
+/*Modifica o card de cada personagem*/
+.card{ /*article dos cards dos personagens*/
+    display: inline-block;
+    width: 250px;
+    margin: 15px;
+    padding: 10px;
+    background-color: rgba(107, 129, 140, 1);
+    border-radius: 10px;
+}
+
+/*Ajusta a imagem dos personagens dentro do card*/
+.card img{
+    width: 100%;
+    height: 135px;
+    border-radius: 8px;
+    object-fit: cover; /*Ajusta a imagem sem distorcer, melhor código da história, mudou completamente a minha vida!!!!!*/
+}
+
+#personagens{
+    background-image: url(./imagens/hogwarts.jpeg); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 30px;
+    /*Alterar o tamanho da imagem - background-size=cover, contain não repetir a imagem varias vezes - background-repeat no repeat - background-postion*/
+}
+
+#personagens h2{
+    color: rgb(2, 99, 16);
+    font-family: 'Harry Potter';
+}
+
+#secao-livros{
+    margin-top: 30px;
+    background-color: rgb(0, 71, 107);
+    padding: 15px;
+}
+
+.livros{
+    display: inline-block; /*Display para os cards*/
+    width: 450px;
+    border-radius: 10px;
+    padding-top: 20px;
+    background-color: rgba(107, 129, 140, 1);
+    margin: 20px;
+    padding: 15px;
+}
+
+.livros img{
+    width: 400px;
+    border-radius: 10px;
+    height: 600px;
+}
